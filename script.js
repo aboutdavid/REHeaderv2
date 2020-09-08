@@ -10,4 +10,8 @@ const subtitle = urlParams.get('subtitle');
 const description = urlParams.get('desc');
 const color = urlParams.get('color');
 
+if (!title || !subtitle || !description || !color){
+  alert('A value was not found, stopping rendering...')
+  window.stop();
+}
 draw(title, subtitle, description, color);
