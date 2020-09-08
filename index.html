@@ -4,7 +4,14 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <title>Hello!</title>
 
     <!-- import the webpage's stylesheet -->
@@ -15,7 +22,13 @@
   </head>
   <body>
     <h1>Hi there!</h1>
-    <canvas id="preview"> </canvas>
+    <center>
+      <div class="container-sm">
+        Select a background color:
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000" />
+      </div>
+      <br><canvas id="preview"> </canvas>
+    </center>
 
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
