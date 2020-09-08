@@ -10,7 +10,7 @@
   <link href="/style.css" rel="stylesheet" />
   
 </head>
-<header id="preview"><script src="/script.js"></script></header>
+<header id="preview"><script src="/script.js"></script><canvas id="previewcanvas" width="1366" height="577"></canvas></header>
 <body>
   
 </body>
@@ -19,6 +19,7 @@
   setTimeout(loadCanvas, 100)
   function loadCanvas(){
   html2canvas(document.body).then(function(canvas) {
+    canvas: "previewcanvas"
     document.body.appendChild(canvas);
     document.getElementById("preview").innerHTML = ""
   });
