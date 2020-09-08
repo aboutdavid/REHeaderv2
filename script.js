@@ -6,6 +6,7 @@ function draw(title, subtitle, desc, color){
   document.writeln(`<p style="font-weight:300;font-size:20px;"><center>${desc}</center></p><br>`);
   document.writeln(`</div>`);
   
+  
 }
 function lineBreakCount(str){
 	/* counts \n */
