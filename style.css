@@ -1,13 +1,13 @@
 /* CSS files add styling rules to your content */
-
 body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 2em;
+  font-family: "Open Sans", sans-serif;
 }
-
-h1 {
-  font-style: italic;
-  color: #373fff;
+.sub {
+  font-size: 300px;
 }
-
+.head {
+  font-size: 700px;
+}
+.desc {
+  font-size: 400px;
 }
