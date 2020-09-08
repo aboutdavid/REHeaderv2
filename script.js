@@ -5,6 +5,15 @@ function draw(title, subtitle, desc, color){
   document.writeln(`<p class="head">&nbsp;&nbsp;&nbsp;&nbsp;${subtitle}</p>`);
   document.writeln(`<p style="font-weight:300;font-size:20px;"><center>${desc}</center></p><br>`);
   document.writeln(`</div>`);
+  
+}
+function lineBreakCount(str){
+	/* counts \n */
+	try {
+		return((str.match(/[^\n]*\n[^\n]*/gi).length));
+	} catch(e) {
+		return 0;
+	}
 }
 const title = urlParams.get('title');
 const subtitle = urlParams.get('subtitle');
@@ -12,3 +21,7 @@ const description = urlParams.get('desc');
 const color = urlParams.get('color');
 
 draw(title, subtitle, marked(description), color);
+
+var canvas = document.getElementById("demo")
+var height = 
+lineBreakCount * 20
