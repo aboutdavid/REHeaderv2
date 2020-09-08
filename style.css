@@ -4,9 +4,11 @@ body {
 }
 .sub {
   font-weight: 300;
+  font-size: 30px;
 }
 .head {
   font-weight: 700;
+  font-size: 48px;
 }
 .desc {
   font-size: 400px;
