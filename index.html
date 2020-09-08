@@ -26,12 +26,21 @@
       <div class="container-sm">
         Select a background color:
         <input type="color" id="favcolor" ng-model="background" name="favcolor" value="#ff0000" />
+        <form>
+          <div class="form-group">
+            <label for="title">Top Text</label>
+            <input type="email" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Hey 👋! I'm David!">
+          </div>
+          <div class="form-group">
+            <label for="subtitle">Bottom Text</label>
+            <input type="password" class="form-control" id="subtitle" placeholder="I'm a w">
+          </div>
+          <button type="submit" class="btn btn-primary" onclick="draw();">Generate!</button>
+        </form>
       </div>
-      <p ng-bind="background"></p>
+      
       <br><canvas id="preview"> </canvas>
-    <button class="btn btn-primary" onclick="draw();">
-      Generate!
-      </button>
+
     </center>
 
     <!-- include the Glitch button to show what the webpage is about and
