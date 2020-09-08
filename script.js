@@ -13,7 +13,5 @@ const subtitle = urlParams.get('subtitle');
 const description = urlParams.get('desc');
 const color = urlParams.get('color');
 // Do fancy markdown
-const titlev2 = marked(title);
-const subtitlev2 = marked(subtitle);
-const descriptionv2 = marked(description);
-draw(titlev2, subtitlev2, descriptionv2, color);
+
+draw(title, subtitle, description, color);
