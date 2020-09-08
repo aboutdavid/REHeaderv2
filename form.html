@@ -19,8 +19,15 @@
 </body>
 
 <script>
+  setTimeout(loadCanvas, 3000)
+  function loadCanvas(){
   html2canvas(document.body).then(function(canvas) {
+    useCORS: false
+    foreignObjectRendering: true
+    imageTimeout: 0
     document.body.appendChild(canvas);
     document.getElementById("preview").innerHTML = ""
+
   });
+  }
 </script>
