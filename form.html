@@ -11,13 +11,16 @@
     rel="stylesheet"
   />
   <link href="/style.css" rel="stylesheet" />
+  
 </head>
+<header id="preview"><script src="/script.js"></script></header>
 <body>
-  <script src="/script.js"></script>
+  
 </body>
 
 <script>
   html2canvas(document.body).then(function(canvas) {
     document.body.appendChild(canvas);
+    document.getElementById("preview").innerHTML = ""
   });
 </script>
