@@ -19,7 +19,6 @@
   setTimeout(loadCanvas, 100)
   function loadCanvas(){
   html2canvas(document.body).then(function(canvas) {
-    canvas: "previewcanvas"
     document.body.appendChild(canvas);
     document.getElementById("preview").innerHTML = ""
   });
