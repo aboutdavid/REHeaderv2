@@ -3,10 +3,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 .sub {
-  font-size: 300px;
+  font-weight: 300;
 }
 .head {
-  font-size: 700px;
+  font-weight: 700;
 }
 .desc {
   font-size: 400px;
