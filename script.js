@@ -1,7 +1,7 @@
 
 
 const urlParams = new URLSearchParams(window.location.search);
-function draw(profile, title, subtitle, desc, color){
+function draw(image, title, subtitle, desc, color){
   document.writeln(`<div style="background-color:${color};"><br><br>`);
   if (image){
     document.writeln(`<center><img src=${image} alt="Profile" width="500" height="600"></center>`)
