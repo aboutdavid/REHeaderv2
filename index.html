@@ -4,28 +4,18 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <title>Hello!</title>
-    <script>
-      // Set form values
-      var title = document.getElementById("title").value;
-      var subtitle = document.getElementById("subtitle").value;
-      var desc = document.getElementById("desc").value;
-    </script>
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <h1>Hi there!</h1>
+    <h1>Hi there! Enter a few thing to generate your header!</h1>
     <center>
-      <form>
+      <form action="/form.html">
         <div class="form-group">
           <label for="title">Title</label>
           <input
@@ -33,13 +23,14 @@
             class="form-control"
             id="title"
             aria-describedby="emailHelp"
-            placeholder="Hi! I'm,"
+            placeholder="Hi 👋! I'm,"
+            name="title"
             required
           />
         </div>
         <div class="form-group">
           <label for="subtitle">Subtitle</label>
-          <input type="text" class="form-control" id="subtitle" required />
+          <input type="text" class="form-control" id="subtitle" name="subtitle" required />
         </div>
         <div class="form-group">
           <label for="desc">Description</label>
@@ -47,15 +38,16 @@
             class="form-control"
             id="desc"
             rows="3"
+            name="desc"
             placeholder="Something, Something, Something..."
             required
           ></textarea>
         </div>
-        <button type="button" class="btn btn-primary" onclick="draw(title, subtitle, desc)">
+        <button type="submit" class="btn btn-primary" >
           Submit
         </button>
       </form>
-      <div id="preview"></div>
+      
     </center>
 
     <!-- include the Glitch button to show what the webpage is about and
