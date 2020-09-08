@@ -11,27 +11,16 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <title>Hello!</title>
     <script>
       // Set form values
       var title = document.getElementById("title").value;
       var subtitle = document.getElementById("subtitle").value;
       var desc = document.getElementById("desc").value;
-      function draw(title, subtitle, desc) {
-        // Draw canvas
-        var c = document.getElementById("preview");
-        var ctx = c.getContext("2d");
-        ctx.font = "30px Arial";
-        ctx.fillText(title, 10, 50);
-      }
     </script>
-
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
   </head>
   <body>
     <h1>Hi there!</h1>
@@ -62,16 +51,17 @@
             required
           ></textarea>
         </div>
-        <button type="button" class="btn btn-primary" onclick="draw(title)">
+        <button type="button" class="btn btn-primary" onclick="draw(title, subtitle, desc)">
           Submit
         </button>
       </form>
-      <canvas width="500" height="250" id="preview"></canvas>
+      <div id="preview"></div>
     </center>
 
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <script src="https://button.glitch.me/button.js" defer></script>
+    <script src="/script.js" defer></script>
   </body>
 </html>
