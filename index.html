@@ -13,6 +13,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <title>Hello!</title>
+    <script>
+    // Set form values
+    var title = document.getElementById("title").value;
+    var subtitle = document.getElementById("subtitle").value;
+    var desc = document.getElementById("desc").value
+    </script>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
@@ -23,29 +29,23 @@
   <body>
     <h1>Hi there!</h1>
     <center>
-      <div class="container-sm">
-        Select a background color:
-        <input type="color" id="favcolor" ng-model="background" name="favcolor" value="#ff0000"/>
-        <form>
-          <div class="form-group">
-            <label for="title">Top Text:</label>
-            <input type="email" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Hi 👋, I'm" required>
-          </div>
-          <div class="form-group">
-            <label for="subtitle">Bottom Text:</label>
-            <input type="text" class="form-control" id="subtitle" placeholder="aboutDavid!" required>
-          </div>
-          <button type="button" class="btn btn-primary" onclick="draw();">Generate!</button>
-        </form>
-      </div>
-      <div class="form-group">
-        <label for="desc">Description:</label>
-        <textarea class="form-control" id="desc" rows="3"></textarea>
-      </div>
-      <br><canvas id="preview"> </canvas>
-<script>
-      
-</script>
+    <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="button" class="btn btn-primary" onclick="draw()">Submit</button>
+</form>
+    <canvas width="" height=""></canvas>
     </center>
 
     <!-- include the Glitch button to show what the webpage is about and
