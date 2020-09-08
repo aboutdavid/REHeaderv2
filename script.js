@@ -1,5 +1,5 @@
 const urlParams = new URLSearchParams(window.location.search);
-function draw(image, title, subtitle, desc, color){
+function draw(title, subtitle, desc, color){
   document.writeln(`<div style="background-color:${color};line-height: 20px;"><br><br>`);
   document.writeln(`<p class="desc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${title}</p>`);
   document.writeln(`<p class="head">&nbsp;&nbsp;&nbsp;&nbsp;${subtitle}</p>`);
